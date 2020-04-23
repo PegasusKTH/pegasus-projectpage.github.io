@@ -17,17 +17,46 @@
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
 	</head>
 	<body class="no-sidebar">
 
 		<!-- Header -->
+		
+		<head>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+		
 			<div id="header">
 				<div class="container">
 						
-					<!-- Logo -->
-						<a class="image feature"><img src="images/pic02.jpg" alt=""></a>
-						<h1><a id="logo">Project Website for course II1305</a></h1>
-						<h2>Developed by group Pegasas</a></h2>
+					<h1><a id="logo">Project Website for course II1305</a></h1>
+						<h2>Developed by group Pegasus</a></h2>
 					
 					<!-- Nav -->
 						<nav id="nav">
@@ -45,11 +74,15 @@
 								</li>
 							</ul>
 						</nav>
-
+					
+					<!-- Logo -->	
+						<a class="image feature"><img src="images/PegasusPixelArt.png" alt=""></a>
+				
 				</div>
 			</div>
 
 		<!-- Main -->
+	
 			<div id="main" class="wrapper style1">
 				<div id="cont1" class="container">
 					<section>
@@ -58,15 +91,17 @@
 							<span class="byline">Our project is a  graph based approach towards building a collection of all courses in KTH and then cataloging them based on program and course specific prerequisites. It can probably give you a predicted amount of HP given your program and what courses you want to take :)
 								</span>
 						</header>
-
-					</section>
-				</div>
-
-				<div id="cont2" class="container">
-					<section>
+						
 						<header class="major">
-							<h2>Group members</h2>													
-							<span class="byline">Edvin Walleborn, Patrik Zhong, Alexander Carlsson, Johanna Jansson, Jing Li, Rasmus Hammer, Erik Blondell, Johan Engström, Celine Mileikowsky</span>
+							<h3>Github</h3>
+							
+							<script>
+							var txt = "here";
+							document.write("<p>The github for the project can be found " + txt.link("https://github.com/PegasusKTH/PegasusKTH.github.io") + "</p>");
+							</script>
+						
+							<h3>Group members</h3>													
+							<p>Edvin Walleborn, Patrik Zhong, Alexander Carlsson, Johanna Jansson, Jing Li, Rasmus Hammer, Erik Blondell, Johan Engström, Celine Mileikowsky</p>
 						</header>
 					</section>
 				</div>
@@ -82,11 +117,11 @@
 								requirements<br/>5. Interactive graphics<br/>6. Improving website's GUI</p>
 								
 								<h4>Sprint Goal</h4>
-								<p>To be filled...</p>
+								<p>Be done with prerequisites for implementing the graphical interface</p>
 								<h4>Demo Date</h4>
-								<p>To be filled...</p>
+								<p>Friday 2020-04-20, 08.30-10.00</p>
 								<h4>Daily Scrums</h4>
-								<p>To be filled...</p>
+								<p>08.00-08.15 every morning</p>
 
 
 
