@@ -61,6 +61,11 @@
 		font-size: 1.25em;
 	}
 
+	#logo {
+		width: 5vmax;
+		height: 5vmax;
+	}
+
 	sub {
 		font-size: 0.8em;
 		position: relative;
